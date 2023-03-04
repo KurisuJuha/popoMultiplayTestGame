@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d1ed023208a1620a07d1f9d1cd8ce522344a3d4f"
+      "hash": "7bdc83995a274317a09fc6ec141e1ba9cde7182e"
     },
     "com.endel.nativewebsocket": {
       "version": "1.1.4",
