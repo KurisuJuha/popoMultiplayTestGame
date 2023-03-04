@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a5b08d163555ad4eabd4175c557476f
+guid: d11e243674c232c44aa21b066a17089b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,15 +45,15 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  alignment: 9
+  spritePivot: {x: 0.35854438, y: 0.57395613}
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -120,12 +120,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {instanceID: 0}
+      name: _Emission
     nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
