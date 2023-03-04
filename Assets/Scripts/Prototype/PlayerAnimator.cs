@@ -11,8 +11,8 @@ public class PlayerAnimator : PopoBehaviour
 
     [TabGroup("Tab", "Parameter"), SerializeField] private float spriteChangeSpeed;
     [TabGroup("Tab", "Parameter"), SerializeField] private Sprite[] sprites;
-    [ShowInInspector]
-    public float elapsed
+    [TabGroup("Tab", "Parameter"), ShowInInspector]
+    private float elapsed
     {
         get => _elapsed;
         set => _elapsed = value % sprites.Length;
