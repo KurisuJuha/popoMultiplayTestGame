@@ -1,5 +1,4 @@
 using JuhaKurisu.PopoTools.Utility;
-using JuhaKurisu.PopoTools.Extentions;
 using AnnulusGames.LucidTools.Inspector;
 using UnityEngine;
 
