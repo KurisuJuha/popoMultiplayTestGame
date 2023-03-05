@@ -14,6 +14,12 @@ public class GunController : PopoBehaviour
     {
         cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         cursorPosition = new(cursorPosition.x, cursorPosition.y, 0);
+
+        RotateGun();
+    }
+
+    private void RotateGun()
+    {
         transform.rotation = Quaternion.FromToRotation(Vector3.right, (cursorPosition - transform.position));
         transform.localScale = new(
             1,
