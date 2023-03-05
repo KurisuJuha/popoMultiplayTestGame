@@ -7,11 +7,12 @@ public class GunController : PopoBehaviour
 {
     [SerializeField, Required, TabGroup("Tab", "Components")] private Transform gunTransform;
     [SerializeField, TabGroup("Tab", "Parameter")] private float maxGunDistance;
+    [SerializeField, TabGroup("Tab", "Parameter"), ReadOnly] private Vector3 cursorPosition;
 
 
     protected override void Update()
     {
-        Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         cursorPosition = new(cursorPosition.x, cursorPosition.y, 0);
         transform.rotation = Quaternion.FromToRotation(Vector3.right, (cursorPosition - transform.position));
         transform.localScale = new(
