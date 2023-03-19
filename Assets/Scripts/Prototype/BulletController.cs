@@ -1,3 +1,4 @@
+using JuhaKurisu.PopoTools.Extentions;
 using JuhaKurisu.PopoTools.Utility;
 using AnnulusGames.LucidTools.Inspector;
 using UnityEngine;
@@ -16,6 +17,7 @@ public class BulletController : PopoBehaviour
 
     protected override void OnTriggerEnter2D(Collider2D other)
     {
+        other.name.Inspect();
         if (!(other.TryGetComponent<BulletController>(out var otherBullet) && otherBullet.isMyTeam)) Destroy(gameObject);
     }
 }

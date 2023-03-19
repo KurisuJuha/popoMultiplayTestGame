@@ -24,7 +24,7 @@ public class GunController : PopoBehaviour
         cursorPosition = new(cursorPosition.x, cursorPosition.y, 0);
 
         RotateGun();
-        if (Input.GetKey(KeyCode.Space)) FireWithInterval.Invoke();
+        if (Input.GetMouseButton(0)) FireWithInterval.Invoke();
     }
 
     private void RotateGun()
